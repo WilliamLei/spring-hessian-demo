@@ -10,5 +10,5 @@ public interface HessianInterface {
 
     String sayHelloTo(String name);
     
-    String info(Model model);
+    String info(Model model, String extra);
 }

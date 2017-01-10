@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class Model implements Serializable{
 	
-	private String username;
+	private String username1;
 	
 	private String pwd;
 
 	public String getUsername() {
-		return username;
+		return username1;
 	}
 
 	public void setUsername(String username) {
-		this.username = username;
+		this.username1 = username;
 	}
 
 	public String getPwd() {
