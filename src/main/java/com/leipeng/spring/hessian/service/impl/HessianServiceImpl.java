@@ -1,5 +1,6 @@
 package com.leipeng.spring.hessian.service.impl;
 
+import com.leipeng.spring.hessian.model.Model;
 import com.leipeng.spring.hessian.service.HessianInterface;
 
 /**
@@ -13,4 +14,11 @@ public class HessianServiceImpl implements HessianInterface {
     public String sayHelloTo(String name) {
         return "hello: " + name;
     }
+
+	public String info(Model model) {
+		if(model == null) {
+			return null;
+		}
+		return model.getUsername() + ": " + model.getPwd();
+	}
 }
